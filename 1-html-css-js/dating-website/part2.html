@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dating Website</title>
+
+    <style>
+        fieldset {
+            background:lightyellow;
+            border:10px solid yellow;
+            margin-bottom:10px;
+            width:720px
+        }
+        label {
+            width:180px;
+            display:inline-block;
+            text-align:right;
+            vertical-align:top;
+        }
+        .checkboxlabel {
+            width:auto;
+        }
+        .radiolabel {
+            width:auto;
+        }
+        .rangetext-left {
+            display:inline-block;
+            width:50px;
+            text-align:center;
+            color:white;
+            background-color:brown;
+        }
+        .rangetext-right {
+            display:inline-block;
+            width:50px;
+            text-align:center;
+            color:white;
+            background-color:purple;
+        }
+        textarea {
+            width:360px;
+            height:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form method="post" enctype="multipart/form-data"
+    action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="yourimg">Your image:</label>
+            <input type="file" name="fileToUpload" id="yourimg" required>
+            <br>
+            <label for="preview">Image preview:</label>
+            <img id="preview">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your full name" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="Male" id="male" required>
+            <label for="male" class="checkboxlabel">Male</label>
+            <input type="radio" name="gender" value="Female" id="female" required>
+            <label for="female" class="checkboxlabel">Female</label>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="1" max="99" step="1" value="18" required>
+            <br>
+            <label for="birthday">Date of birth:</label>
+            <input type="date" name="birthday" id="birthday">
+            <br>
+            <label for="favcolor">Favorite color:</label>
+            <input type="color" name="favcolor" id="favcolor">
+            <br>
+            <label for="country">Which country:</label>
+            <select name="country" id="country">
+                <option disabled selected></option>
+                <option value="us">US</option>
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+                <option value="brazil">Brazil</option>
+                <option value="argentina">Argentina</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your indicators</legend>
+            <label for="height">Height:</label>
+            <span class="rangetext-left">Short</span>
+            <input type="range" name="height" id="height" min="0" max="100">
+            <span class="rangetext-right">Fall</span>
+            <br>
+            <label for="salary">Salary:</label>
+            <span class="rangetext-left">Poor</span>
+            <input type="range" name="salary" id="salary" min="0" max="100">
+            <span class="rangetext-right">Rich</span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your contact information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="mobile" id="mobile">
+            <br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address"></textarea>
+            <br>
+            <label for="method">Method to contact you:</label>
+            <input type="checkbox" name="method" id="m_email">
+            <label for="m_email" class="radiolabel">Email</label>
+            <input type="checkbox" name="method" id="m_whatsapp">
+            <label for="m_whatsapp" class="radiolabel">Whatsapp</label>
+            <input type="checkbox" name="method" id="m_chat">
+            <label for="m_chat" class="radiolabel">In-app chat</label>
+        </fieldset>
+
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
