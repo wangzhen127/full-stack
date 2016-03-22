@@ -12,6 +12,10 @@
     {
       "path": "node-express",
       "name": "node-express"
+    },
+    {
+      "path": "node-express-gen",
+      "name": "node-express-gen"
     }
   ]
 }
