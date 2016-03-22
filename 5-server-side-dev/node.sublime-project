@@ -8,6 +8,10 @@
     {
       "path": "node-http",
       "name": "node-http"
+    },
+    {
+      "path": "node-express",
+      "name": "node-express"
     }
   ]
 }
