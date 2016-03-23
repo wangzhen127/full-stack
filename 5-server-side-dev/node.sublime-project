@@ -28,6 +28,10 @@
     {
       "path": "rest-server",
       "name": "rest-server"
+    },
+    {
+      "path": "basic-auth",
+      "name": "basic-auth"
     }
   ]
 }
