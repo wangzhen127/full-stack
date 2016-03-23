@@ -16,6 +16,14 @@
     {
       "path": "node-express-gen",
       "name": "node-express-gen"
+    },
+    {
+      "path": "node-mongodb",
+      "name": "node-mongodb"
+    },
+    {
+      "path": "node-mongoose",
+      "name": "node-mongoose"
     }
   ]
 }
