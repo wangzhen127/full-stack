@@ -24,6 +24,10 @@
     {
       "path": "node-mongoose",
       "name": "node-mongoose"
+    },
+    {
+      "path": "rest-server",
+      "name": "rest-server"
     }
   ]
 }
