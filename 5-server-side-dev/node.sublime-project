@@ -32,6 +32,10 @@
     {
       "path": "basic-auth",
       "name": "basic-auth"
+    },
+    {
+      "path": "rest-server-passport",
+      "name": "rest-server-passport"
     }
   ]
 }
